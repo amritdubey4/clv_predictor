@@ -1,6 +1,6 @@
 # 💰 Customer Lifetime Value (CLV) Predictor
 
-![CLV Predictor Banner](https://imgur.com/6qIqKn5.png)
+
 
 > Predict how much value a customer will bring over their lifetime using machine learning — beautifully wrapped in a glowing galaxy-themed UI 🌌
 
@@ -27,7 +27,7 @@
 
 | Input Form | Prediction Output |
 |------------|-------------------|
-| ![Form](https://imgur.com/f3tpqpY.png) | ![Result](https://imgur.com/zw3tM1n.png) |
+| ![Form](https://drive.google.com/file/d/1K-wVW8l4PyyVfxEDtzMsk57c-1l0ln25/view?usp=sharing) | ![Result](https://drive.google.com/file/d/1V7wrDluNyh7erCF1pN2zRkgtf_H6X6Jh/view?usp=sharing) |
 
 ---
 
