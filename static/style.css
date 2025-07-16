@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(45deg, #1a0033, #232526, #0a0a1a);
+  color: #ffe9c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Star constellation effect */
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url('https://raw.githubusercontent.com/GitHubCopilot-Assets/galaxy-stars/main/stars.png'),
+    url('https://raw.githubusercontent.com/GitHubCopilot-Assets/galaxy-stars/main/constellation.png');
+  background-repeat: repeat, no-repeat;
+  background-position: center, top right;
+  background-size: cover, 400px;
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+/* Supernova glow at the bottom */
+body::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 260px;
+  background: radial-gradient(ellipse at center, #ffef8a 0%, #ff6b6b 40%, #7fdaff22 80%, transparent 100%);
+  opacity: 0.45;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  background: rgba(34, 34, 54, 0.96);
+  padding: 40px 55px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 #ffef8a55, 0 1.5px 8px #ff6b6b44;
+  width: 500px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  border: 2px solid #ffef8a88;
+  transition: box-shadow 0.3s, background 0.3s;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border-radius: 30px;
+  pointer-events: none;
+  background: linear-gradient(135deg, #ffef8a33 0%, #ff6b6b22 100%);
+  opacity: 0.22;
+  z-index: -1;
+}
+
+.container:hover {
+  background: rgba(34, 34, 54, 0.99);
+  box-shadow: 0 0 36px 0 #ffef8a, 0 1.5px 8px #ff6b6b88;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.12);
+  width: 100%;
+  padding: 16px;
+  margin: 16px 0;
+  border: 2px solid #ffef8a;
+  border-radius: 12px;
+  color: #ffe9c6;
+  /* color-scheme: white; */
+  font-size: 1em;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 8px #ffef8a44;
+}
+
+input::placeholder {
+  color: #fffdfd;
+  opacity: 0.8;
+}
+
+input:focus,
+input:hover {
+  border: 2.5px solid #ff6b6b;
+  box-shadow: 0 0 14px #ff6b6b88;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  margin: 18px 0;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ffef8a 0%, #ff6b6b 60%, #b79c74 100%);
+  color: #1a0033;
+  font-weight: bold;
+  font-size: 1.12em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 14px #ffef8a44, 0 0 0 2px #ff6b6b44;
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.6px;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff6b6b 0%, #ffef8a 80%, #ffe9c6 100%);
+  color: #232526;
+  box-shadow: 0 0 26px #ffef8a88;
+}
+
+#result {
+  margin-top: 24px;
+  font-size: 1.22em;
+  color: #ffef8a;
+  letter-spacing: 0.8px;
+  /* text-shadow: 0 2px 14px #ffef8a88, 0 0 10px #ff6b6b66; */
+  /* background: linear-gradient(90deg, #232526 0%, #ffef8a22 100%); */
+  border-radius: 10px;
+  padding: 14px 0;
+  /* border: 1.5px solid #ffef8a44; */
+}
