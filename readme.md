@@ -8,7 +8,7 @@
 
 ## 🚀 Live Demo
 
-🔗 [Try It on Netlify](https://your-netlify-site.netlify.app/)  
+🔗 [Try It on Collab](https://colab.research.google.com/drive/1GxJM-ZKxxmzVhw13ijlKBScXP2PRctA5?usp=sharing)  
 🔁 (Replace with your live Netlify URL)
 
 ---
